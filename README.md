@@ -10,6 +10,16 @@
 composer require daitsuna-group/amcp-client
 ```
 
+Так же в composer.json нужно добавить:
+```json
+"repositories": [ 
+        { 
+            "type": "git", 
+            "url": "https://github.com/daitsuna-group/amcp-client" 
+        } 
+    ],
+```
+
 ## Использование
 
 Пример использования:
