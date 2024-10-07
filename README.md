@@ -2,6 +2,10 @@
 
 Обертка для работы с AMCP протоколом для управления CasparCG.
 
+[![Build Status](https://github.com/daitsuna-group/amcp-client/actions/workflows/main.yml/badge.svg)](https://github.com/daitsuna-group/amcp-client/actions)
+[![Coverage Status](https://coveralls.io/repos/github/daitsuna-group/amcp-client/badge.svg?branch=main)](https://coveralls.io/github/daitsuna-group/amcp-client?branch=main)
+
+
 ## Установка
 
 Используйте Composer для установки:
