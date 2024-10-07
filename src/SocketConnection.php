@@ -33,15 +33,17 @@ class SocketConnection implements ConnectionInterface
         return true;
     }
 
-    public function disconnect()
+    public function disconnect(): bool
     {
         if ($this->connected && $this->socket) {
             fclose($this->socket);
             $this->connected = false;
+            return true;
         }
+        return false;
     }
 
-    public function sendCommand($command)
+    public function sendCommand(string $command): bool // Updated method signature
     {
         $this->connect();
 
@@ -56,6 +58,6 @@ class SocketConnection implements ConnectionInterface
             }
         }
 
-        return $response;
+        return !empty($response); // Return a boolean as per the interface
     }
 }

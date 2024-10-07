@@ -4,7 +4,7 @@ namespace Daitsuna\AmcpClient;
 
 interface ConnectionInterface
 {
-    public function connect(): bool;
+    public function connect();
     public function disconnect(): bool;
     public function sendCommand(string $command): bool;
 
